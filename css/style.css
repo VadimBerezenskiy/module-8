@@ -84,7 +84,12 @@ button {
   font-size: 14px;
   line-height: 1.2;
   color: var(--promo-color-text);
-  margin-bottom: 110px;
+}
+
+@media (max-width: 767px) {
+  .registration {
+    margin-bottom: 110px;
+  }
 }
 
 .registration:focus {
@@ -234,4 +239,124 @@ button {
   font-weight: 700;
   line-height: 1.2;
   margin-bottom: 58px;
+}
+
+/* FOR TABLET */
+
+@media (min-width: 768px) {
+  /* ------HEADER----- */
+  .wrapper-logo-registration {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 38px 0 136px;
+  }
+
+  .promo-title {
+    font-size: 52px;
+    margin-bottom: 26px;
+  }
+
+  .promo-title span {
+    display: block;
+  }
+
+  .promo-description {
+    font-size: 24px;
+    margin-bottom: 34px;
+  }
+
+  .promo-description span {
+    display: inline;
+  }
+
+  .wrapper-link-find-partner {
+    padding-bottom: 232px;
+  }
+
+  .link-find-partner {
+    width: 226px;
+  }
+
+  /* -----PARTNERS----- */
+
+  .sections-partner-title {
+    margin: 70px 0 30px;
+  }
+
+  .change-order-list {
+    order: 1;
+  }
+
+  .partner-list {
+    margin: 0 auto;
+    display: flex;
+    padding-bottom: 38px;
+    justify-content: space-between;
+  }
+
+  .partner-list-item {
+    margin: 0;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1439px) {
+  /* ------HEADER----- */
+  .promo {
+    background-image: url(../img/bg-img/promo-pic-768x700.png);
+  }
+
+  .wrapper-logo-registration {
+    width: 672px;
+  }
+
+  /* -----PARTNERS----- */
+
+  .partner-list {
+    width: 492px;
+    flex-wrap: wrap;
+  }
+  .partner-info {
+    margin-bottom: 50px;
+  }
+
+  .change-order-list .partner-info:nth-child(n + 2) {
+    margin-bottom: 0;
+  }
+
+  .btn-more-partners {
+    margin-bottom: 40px;
+  }
+}
+
+/* ------DESKTOP------ */
+
+@media (min-width: 1440px) {
+  /* ------HEADER----- */
+  .promo {
+    background-image: url(../img/bg-img/promo-pic-1440x700.png);
+  }
+
+  .wrapper-logo-registration {
+    width: 942px;
+  }
+
+  .registration:hover {
+    border: 2px solid #ffffff;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+
+  /* -----PARTNERS----- */
+
+  .partner-list {
+    width: 942px;
+  }
+
+  .btn-more-partners {
+    margin-bottom: 72px;
+    cursor: pointer;
+  }
 }
